@@ -1,0 +1,52 @@
+# #################### #
+# Entornos Virtuales #
+# #################### #
+# Ignora la carpeta del entorno virtual para no subir todas las librerías al repositorio.
+venv/
+env/
+.venv/
+virtual/
+
+# #################### #
+#   Archivos Python    #
+# #################### #
+# Ignora las carpetas de caché de Python y los archivos compilados.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de distribución/instalación
+dist/
+build/
+*.egg-info/
+*.egg
+
+# #################### #
+# Archivos del Proyecto #
+# #################### #
+# La carpeta "runs" es donde YOLOv8 guarda los resultados por defecto (imágenes, modelos, etc.)
+runs/
+
+# Es buena práctica ignorar archivos de modelos (.pt) si son muy grandes.
+# Por ahora, el de yolov8n es pequeño, pero si entrenan uno propio, querrán ignorarlo.
+# *.pt
+
+# Si descargan datasets, colóquenlos en una carpeta como "data/" y añádanla aquí.
+# data/
+
+
+# #################### #
+# Configuraciones de IDEs #
+# #################### #
+# Ignora las carpetas de configuración de editores de código comunes.
+.idea/      # PyCharm
+.vscode/    # Visual Studio Code
+*.sublime-* # Sublime Text
+
+# #################### #
+#  Archivos del SO     #
+# #################### #
+# Ignora archivos generados por el sistema operativo.
+.DS_Store   # macOS
+Thumbs.db   # Windows

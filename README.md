@@ -132,6 +132,84 @@ A nivel social, responde a un desafío humanitario: según la OMS, cientos de mi
 
 ---
 
+## Uso
+
+### Interfaz Gráfica
+
+El proyecto incluye una interfaz gráfica completa desarrollada con **tkinter** que permite controlar todas las funcionalidades del asistente visual auditivo.
+
+#### Ejecutar la Interfaz Gráfica
+
+**Opción 1: Usando el script de ayuda (Recomendado)**
+
+En Windows, puedes usar el script batch:
+```bash
+run_gui.bat
+```
+
+O el script PowerShell:
+```bash
+.\run_gui.ps1
+```
+
+**Opción 2: Usando directamente el Python del entorno virtual**
+
+Si tienes problemas con la política de ejecución de PowerShell, usa directamente:
+```bash
+.venv\Scripts\python.exe gui_app.py
+```
+
+**Opción 3: Activando el entorno virtual primero**
+
+Si prefieres activar el entorno virtual primero, puedes cambiar la política de ejecución de PowerShell temporalmente:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.venv\Scripts\Activate.ps1
+python gui_app.py
+```
+
+O usar el método alternativo sin cambiar la política:
+```bash
+.venv\Scripts\python.exe gui_app.py
+```
+
+#### Características de la Interfaz
+
+- **Panel de Video en Tiempo Real**: Muestra el video de la cámara con las detecciones de objetos dibujadas
+- **Controles de Detección**:
+  - Botón Iniciar/Detener para controlar la detección
+  - Configuración de confianza mínima (0.1 a 1.0)
+  - Tiempo de enfriamiento entre anuncios (1 a 15 segundos)
+- **Configuración de Voz (TTS)**:
+  - Velocidad de voz ajustable (50 a 300 palabras por minuto)
+  - Volumen ajustable (0.0 a 1.0)
+- **Panel de Información**:
+  - FPS en tiempo real
+  - Lista de objetos detectados con timestamps
+  - Botón para limpiar la lista de detecciones
+
+#### Funcionalidades Implementadas
+
+- ✅ Detección de objetos en tiempo real con YOLOv8
+- ✅ Anuncio de voz solo para objetos nuevos (evita repeticiones)
+- ✅ Sistema de enfriamiento configurable entre anuncios
+- ✅ Filtro de confianza mínima configurable
+- ✅ Visualización de FPS y rendimiento
+- ✅ Historial de objetos detectados
+- ✅ Interfaz responsive y fácil de usar
+
+### Script Original (Línea de Comandos)
+
+Para usar el script original sin interfaz gráfica:
+
+```bash
+python main_prototype.py
+```
+
+Presiona 'q' para salir.
+
+---
+
 ## Referencias
 - **Repositorio del equipo:**  
   [GitHub - equipo_computacion_visual_UN_2025-2](https://github.com/masanchezpa/equipo_computacion_visual_UN_2025-2.git)  

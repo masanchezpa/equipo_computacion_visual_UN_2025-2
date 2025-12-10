@@ -1,0 +1,22 @@
+{
+  "total_entries": 58,
+  "top_classes": [
+    [
+      "person",
+      105
+    ],
+    [
+      "cell phone",
+      32
+    ],
+    [
+      "refrigerator",
+      2
+    ]
+  ],
+  "frames_per_class": {
+    "person": 57,
+    "refrigerator": 2,
+    "cell phone": 29
+  }
+}

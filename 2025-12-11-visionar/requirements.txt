@@ -1,0 +1,8 @@
+ultralytics
+opencv-python
+pyttsx3==2.91
+pywin32
+pypiwin32
+numpy
+torch
+torchvision
